@@ -19,4 +19,8 @@ void input() {
 
 	}
 
+	cout << "\n--------------------" << endl;
+	cout << "\nEnter array element" << endl;
+	cout << "\n--------------------" << endl;
+
 }
