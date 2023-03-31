@@ -70,7 +70,7 @@ void q_short(int low, int high)
 	{
 		//swap the element at index i with the element at index j
 		swap(i, j);
-		mov_count++;
+		cmp_count++;
 	}
 }
 //j now containt the index of the last element in the sort list
