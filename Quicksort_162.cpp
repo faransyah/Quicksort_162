@@ -39,7 +39,7 @@ void swap(int x, int y)
 }
 void q_short(int low, int high)
 {
-	int pivot, i j;
+	int pivot, i, j;
 	if (low > high) // langkah 1
 		return;
 
@@ -74,9 +74,25 @@ void q_short(int low, int high)
 	}
 }
 //j now containt the index of the last element in the sort list
-if (low < j) //langkah 11
+if (low < j){//langkah 11
 	//move to the pivot to its correct position in the list
-{
-	swap(low, j);
-	mov_count++;
+	{
+		swap(low, j);
+		mov_count++;
 	}
+	//sort the list on the left of pivot using quick sort
+	q_short(low, j - 1); //langkah 12
+	//short the list on the right of pivot using quizl sort
+	q_short(j + 1, high); //langkah 12
+}
+
+void display() {
+	cout << "\n----------------" << endl;
+	cout << "\nsorted array" << endl;
+	cout << "\n----------------" endl;
+
+	for (int i = 0; i < n; i++)
+	{
+		cout << arr[i] << 
+	}
+}
